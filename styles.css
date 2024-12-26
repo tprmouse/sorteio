@@ -1,0 +1,250 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #c9ffbf, #ffafbd);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+    background-image: url('https://tprmouse.github.io/imagens/biologia.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 1rem;
+}
+
+header {
+    background: rgba(34, 139, 34, 0.3);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid rgba(34, 139, 34, 0.3);
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+}
+
+@keyframes borderGradient {
+    0% {
+        border-color: #ff0000;
+    }
+    20% {
+        border-color: #ff7f00;
+    }
+    40% {
+        border-color: #ffff00;
+    }
+    60% {
+        border-color: #00ff00;
+    }
+    80% {
+        border-color: #0000ff;
+    }
+    100% {
+        border-color: #ff0000;
+    }
+}
+
+@keyframes boxShadowGradient {
+    0%, 100% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px #ff0000, 0 0 40px #ff0000;
+    }
+    20% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px #ff7f00, 0 0 40px #ff7f00;
+    }
+    40% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px #ffff00, 0 0 40px #ffff00;
+    }
+    60% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px #00ff00, 0 0 40px #00ff00;
+    }
+    80% {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 20px #0000ff, 0 0 40px #0000ff;
+    }
+}
+
+@keyframes greenGlow {
+    0%, 100% {
+        text-shadow: 0 0 5px #32cd32, 0 0 10px #32cd32;
+    }
+    50% {
+        text-shadow: 0 0 8px #32cd32, 0 0 15px #32cd32;
+    }
+}
+
+.main {
+    background-color: rgba(173, 216, 230, 0.9); 
+    border: 5px solid;
+    border-radius: 15px;
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    margin: 1rem;
+    animation: borderGradient 10s infinite, boxShadowGradient 10s infinite;
+    box-sizing: border-box;
+    text-align: center;
+    background-image: url('turma.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2 {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    animation: greenGlow 2s infinite;
+}
+
+label {
+    display: block;
+    margin: 1rem auto 0.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+}
+
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.0); /* Fundo transparente */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fdfafa; /* Texto preto para melhor contraste */
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.5);
+    transition: box-shadow 0.3s;
+    margin: 0 auto 1rem; /* Margem abaixo adicionada */
+    display: block;
+}
+
+textarea::placeholder {
+    color: #fff;
+    font-weight: bold;
+}
+
+textarea:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 255, 0.7);
+}
+
+button {
+    background: linear-gradient(to right, #66ff66, #32cd32);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #2e8b57;
+    transform: scale(1.05);
+}
+
+button#sortearButton, button#adicionarButton {
+    background: linear-gradient(to right, #00f, #0ff);
+    color: white;
+    border: 2px solid #000; /* Borda preta adicionada */
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #0ff, 0 0 40px #0ff;
+}
+
+button#sortearButton:hover, button#adicionarButton:hover {
+    background-color: #008;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #0ff, 0 0 50px #0ff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#resultado-section {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#resultado {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #fff; /* Texto branco */
+    background: rgba(0, 0, 255, 0.8); /* Fundo azul suave */
+    padding: 1rem;
+    border-radius: 15px;
+    border: 2px solid #000; /* Borda preta adicionada */
+    display: inline-block;
+    margin-top: 1rem;
+    box-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #0ff, 0 0 40px #0ff;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+#resultado.show {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #0ff, 0 0 50px #0ff;
+}
+
+#mensagem {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #ffffff;
+    background-color: #32cd32;
+    padding: 0.75rem;
+    border-radius: 10px;
+    margin-top: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+#mensagem.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background: none;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 100%;
+    margin-top: auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.hidden {
+    display: none;
+}
+
+html, body {
+    height: 100}

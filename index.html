@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SORTEIO DOS BIÓLOGOS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>SORTEIO DOS BIÓLOGOS</h1>
+    </header>
+    <main class="main"> <!-- Adicionada a classe 'main' -->
+        <section class="form-section">
+            <h2>ADICIONE OS NOMES DOS BIÓLOGOS</h2>
+            <form id="adicionarForm">
+                <label for="amigos">Adicione os Nomes (separados por vírgulas):</label>
+                <textarea id="amigos" rows="4" placeholder="Ex: Ana, Bruno, Carlos, ..."></textarea>
+                <div class="button-container">
+                    <button type="button" id="adicionarButton">Adicionar Nomes</button>
+                </div>
+            </form>
+            <div id="mensagem" class="hidden"></div>
+        </section>
+        <section class="form-section">
+            <h2>CLIQUE AQUI PARA SORTEAR!</h2>
+            <form id="sorteioForm">
+                <div class="button-container">
+                    <button type="button" id="sortearButton">Sortear</button>
+                </div>
+            </form>
+        </section>
+        <section id="resultado-section" class="hidden">
+            <h2>Resultado do Sorteio</h2>
+            <div id="resultado"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Criado Especialmente pelo tenente Maicon para a turma.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
